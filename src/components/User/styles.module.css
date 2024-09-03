@@ -1,5 +1,4 @@
 .container{
-    margin-top: 10px;
     width: 500px;
     height: 70px;
 }
@@ -15,7 +14,18 @@
     border-radius: 10px;
 }
 
-img,
+/* .card.active{
+    box-shadow: #6584FF;
+    border: 1px solid #6584FF;
+} */
+
+.card:hover{
+    cursor: pointer;
+    background-color: black;
+    background: linear-gradient(90deg, rgba(101,132,255,1) 0%, rgba(0,0,0,1) 20%);
+}
+
+.img,
 .img_div{
     width: 50px;
     height: 50px;
@@ -73,4 +83,9 @@ img,
 
 .contact a:hover{
     color: rgb(255, 255, 255);
+}
+
+.contact a:hover .phone_icon,
+.contact a:hover .mail_icon{
+    color: #6584FF;
 }

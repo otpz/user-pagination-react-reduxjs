@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import useFetch from './hooks/useFetch';
-import User from './components/User/User';
 import Header from './components/Header/Header';
+import UserList from './components/UserList/UserList';
+import UserDetail from './components/UserDetail/UserDetail';
 
 const App = () => {
   const {data, loading, error} = useFetch('https://dummyjson.com/users')
@@ -14,7 +15,10 @@ const App = () => {
     <div className="container">
       <div className="inner">
         <Header/>
-        <User/>
+        <div className='main'>
+          <UserList/>
+          <UserDetail/>
+        </div>
       </div>
     </div>
   )

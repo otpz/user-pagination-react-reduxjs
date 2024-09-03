@@ -1,0 +1,195 @@
+
+.container{
+    width: 850px;
+    height: 500px;
+    background-color: rgba(0, 31, 75, 0.15);
+    border: 1px solid rgba(0, 31, 75, 0.75);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+}
+
+.title{
+    color: white;
+}
+
+.hr{
+    margin: 10px 0;
+    height: 1px;
+    border: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr_vertical{
+    width: 1px;
+    height: 90%;
+    border: 1px solid rgba(136, 136, 136, 0.4);
+    margin: 0 15px;
+}
+
+.left, .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    border-radius: 1000px;
+}
+
+.user_name{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_name span{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.user_name .user_profession{
+    margin-top: 5px;
+    color: #5370e2;
+    font-size: 20px;
+}
+
+.general_info{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.general_info h3{
+    color: rgb(242, 242, 242);
+    font-size: 20px;
+}
+
+.contact{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact a{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact a .phone_icon,
+.contact a .mail_icon{
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.personal{
+    margin-top: 5px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(190, 190, 190);
+}
+
+.personal span{
+    margin-right: 10px;
+}
+
+.address{
+    margin-top: 5px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.map{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right h2{
+    color: rgb(242, 242, 242);
+}
+
+.job_info{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.job_title{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(234, 234, 234);
+    margin-bottom: 10px;
+}
+
+.job_name{
+    /* width: 100%; */
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(234, 234, 234);
+    display: flex;
+    justify-content: space-between;
+}
+
+.place{
+    color: rgb(187, 187, 187);
+}
+
+.job_department{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(234, 234, 234);
+}
+
+.job_info p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(234, 234, 234);
+}
