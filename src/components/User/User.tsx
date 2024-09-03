@@ -1,4 +1,6 @@
 import styles from './styles.module.css'
+import { BiMailSend, BiPhone } from "react-icons/bi";
+
 
 const User = () => {
   return (
@@ -13,8 +15,14 @@ const User = () => {
             </div>
             <hr className={styles.hr}/>
             <div className={styles.contact}>
-                <a className={styles.email} href="mailto: osmantopuz98@gmail.com">E-mail</a>
-                <a href="tel:123-456-7890">123-456-7890</a>
+                <a className={styles.email} href="mailto: osmantopuz98@gmail.com">
+                    <span>E-mail</span>
+                    <BiMailSend className={styles.mail_icon}/>
+                </a>
+                <a href="tel:123-456-7890">
+                <span>123-456-7890</span>
+                    <BiPhone className={styles.phone_icon}/>
+                </a>
             </div>
         </div>
     </div>

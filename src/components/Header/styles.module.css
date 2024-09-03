@@ -78,7 +78,6 @@
     align-items: center;
     cursor: pointer;
     transition: ease-out all 0.2s;
-
 }
 
 .search_button:hover{
