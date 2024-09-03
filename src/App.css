@@ -29,3 +29,8 @@ body{
   align-items: center;
   background-color: rgb(28, 28, 28); 
 }
+
+.inner{
+  width: 1400px;
+  min-height: 100%;
+}

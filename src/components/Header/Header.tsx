@@ -1,14 +1,22 @@
-import React from 'react'
 import styles from './styles.module.css'
-
+import { AiOutlineSearch } from "react-icons/ai";
+import { BsSend } from "react-icons/bs";
 
 const Header = () => {
   return (
     <nav className={styles.container}>
-        <div className={styles.logo}>User Archives</div>
+        <div className={styles.logo}>Find Employee</div>
+        <div className={styles.search_div}>
+          <AiOutlineSearch className={styles.search_icon}/>
+          <input className={styles.search} type="search" placeholder='Search Employee by Name or Profession'/>
+          <button className={styles.search_button}>
+            <span>Search</span>
+            <BsSend className={styles.button_icon}/>
+          </button>
+        </div>
         <ul className={styles.nav_list}>
-            <li className={styles.list_item}>Homepage</li>
-            <li className={styles.list_item}>About</li>
+            <li className={styles.list_item}>Home</li>
+            <li className={styles.list_item}>Idea</li>
             <li className={styles.list_item}>Contact Me</li>
         </ul>
     </nav>
