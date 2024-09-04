@@ -5,6 +5,7 @@ import axios from "axios"
 const useFetch = (URL: string) => {
 
     const [data, setData] = useState<UserType[]>([])
+    const [singleData, setSingleData] = useState<UserType>()
     const [loading, setLoading] = useState<boolean>(true)
     const [error, setError] = useState<string>("")
 
@@ -13,8 +14,8 @@ const useFetch = (URL: string) => {
             try {
                 const response = await axios.get(URL)
                 const data = response.data
-                console.log(data)
                 setData(data.users)
+                setSingleData(data)
             } catch (error: any) {
                 console.log(error)
                 setError(error)
@@ -25,7 +26,7 @@ const useFetch = (URL: string) => {
         fetchData()
     }, [URL])
 
-    return {data, loading, error}
+    return {data, loading, error, singleData}
 }
 
 export default useFetch
