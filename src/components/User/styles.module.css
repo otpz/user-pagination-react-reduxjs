@@ -14,15 +14,20 @@
     border-radius: 10px;
 }
 
-/* .card.active{
-    box-shadow: #6584FF;
+.card.active:hover,
+.card.active{
+    -webkit-box-shadow: 0px 0px 10px 0px #6584FF;
+    -moz-box-shadow: 0px 0px 10px 0px #6584FF;
+    box-shadow: 0px 0px 10px 0px #6584FF;
     border: 1px solid #6584FF;
-} */
+    background: rgb(101,132,255);
+    background: linear-gradient(90deg, rgba(101,132,255,0.5) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(101,132,255,0.5) 100%);
+}
 
 .card:hover{
     cursor: pointer;
-    background-color: black;
-    background: linear-gradient(90deg, rgba(101,132,255,1) 0%, rgba(0,0,0,1) 20%);
+    background: rgb(101,132,255);
+    background: linear-gradient(90deg, rgba(101,132,255,0.5) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(101,132,255,0.5) 100%);
 }
 
 .img,
