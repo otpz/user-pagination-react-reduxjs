@@ -16,6 +16,10 @@ const UserDetail = () => {
         return Math.floor(Math.random() * 5)+1
     }
 
+    useEffect(() => {
+        console.log(singleData)
+    }, [singleData])
+
     if (loading){
         return (
             <div className={styles.container}>
@@ -41,7 +45,7 @@ const UserDetail = () => {
                     <div className={styles.user}>
                         <img className={styles.img} src={singleData?.image} alt={`${singleData?.firstName} ${singleData?.lastName}`} />
                         <div className={styles.user_name}>
-                            <span>{singleData?.firstName}</span>
+                            <span>{singleData?.firstName} {singleData?.lastName}</span>
                             <span className={styles.user_profession}>{singleData?.company.title}</span>
                         </div>
                     </div>
@@ -91,7 +95,7 @@ const UserDetail = () => {
                             <span>(4 year)</span>
                         </div>
                     </div> 
-
+                    
                     <h2 style={{marginTop: "10px"}}>Summary</h2>
                     <div className={styles.job_info}>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sapiente est quos nihil quo, tempora saepe eius error amet doloremque natus dolor. Dolor, reprehenderit voluptatum. Nemo, eligendi? Esse tempora magnam culpa, dolorum eligendi quod ea recusandae non dicta delectus perferendis dignissimos! Iusto aliquam nisi quae doloremque delectus voluptate, nesciunt dolor omnis exercitationem et officiis. Facere explicabo dicta mollitia eaque incidunt.</p>
