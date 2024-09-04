@@ -2,19 +2,17 @@ import styles from './styles.module.css'
 import User from '../User/User'
 import useFetch from '../../hooks/useFetch'
 import { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { setByInput } from '../../features/userId/userIdSlice'
+import { RootState } from '../../app/store'
 
 const UserList = () => {
-  const {data, loading, error} = useFetch('https://dummyjson.com/users?limit=6&skip=0')
+  const pageNumber = useSelector((state: RootState) => state.pagination.pageNumber)
+  const {data, loading, error} = useFetch(`https://dummyjson.com/users?limit=${6}&skip=${6*(pageNumber-1)}`)
 
   const dispatch = useDispatch()
 
   const [activeUserId, setActiveUserId] = useState<number>(1)
-
-  useEffect(() => {
-    console.log(data.length)
-  }, [data])
 
   const handleUserDetail = (id: number) => {
     setActiveUserId(id)

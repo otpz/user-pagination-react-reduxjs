@@ -1,6 +1,5 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import styles from './style.module.css'
-import { RootState } from '../../app/store'
 import { useState } from 'react'
 import { setNumberByClicking } from '../../features/pagination/pagination'
 
@@ -11,7 +10,6 @@ import Stack from '@mui/material/Stack';
 const PaginationControl = () => {
 
   const [page, setPage] = useState<number>(1)
-  const pageNumber = useSelector((state: RootState) => state.pagination.pageNumber)
   
   const dispatch = useDispatch()
 

@@ -16,10 +16,6 @@ const UserDetail = () => {
         return Math.floor(Math.random() * 5)+1
     }
 
-    useEffect(() => {
-        console.log(singleData)
-    }, [singleData])
-
     if (loading){
         return (
             <div className={styles.container}>
