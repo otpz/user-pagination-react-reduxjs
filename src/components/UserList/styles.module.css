@@ -10,3 +10,13 @@
     border: 1px solid rgba(0, 31, 75, 0.75);
     gap: 10px;
 }
+
+.error,
+.loading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: white;
+}

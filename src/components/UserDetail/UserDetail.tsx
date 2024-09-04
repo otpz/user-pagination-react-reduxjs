@@ -40,7 +40,7 @@ const UserDetail = () => {
                         <span>Turkey | Usak, Center 64200</span>
                         <span>Atatürk Mah. 1. Akgül Sok.</span>
                     </address>
-                    <iframe className={styles.map} src="https://maps.google.com/maps?q='39.1667','35.6667'&hl=en&z=14&amp;output=embed" frameBorder="0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    {/* <iframe className={styles.map} src="https://maps.google.com/maps?q='39.1667','35.6667'&hl=en&z=14&amp;output=embed" frameBorder="0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
                 </div>
             </div>
             <hr className={styles.hr_vertical}/>
