@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux'
 import { setByInput } from '../../features/userId/userIdSlice'
 
 const UserList = () => {
-
   const {data, loading, error} = useFetch('https://dummyjson.com/users?limit=6&skip=0')
 
   const dispatch = useDispatch()

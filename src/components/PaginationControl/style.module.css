@@ -1,0 +1,15 @@
+
+.container{
+    width: 530px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid white; */
+}
+
+.container ul li div,
+.container ul li button {
+    color: white;
+}

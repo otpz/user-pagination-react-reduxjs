@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import UserList from './components/UserList/UserList';
 import UserDetail from './components/UserDetail/UserDetail';
+import PaginationControl from './components/PaginationControl/PaginationControl';
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
           <UserList/>
           <UserDetail/>
         </div>
+        <PaginationControl/>
       </div>
     </div>
   )
