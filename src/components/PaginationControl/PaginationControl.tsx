@@ -14,7 +14,6 @@ const PaginationControl = () => {
   const dispatch = useDispatch()
 
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
-    console.log(value)
     setPage(value)
     dispatch(setNumberByClicking(value))
   }

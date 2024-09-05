@@ -8,7 +8,18 @@ import { RootState } from '../../app/store'
 
 const UserList = () => {
   const pageNumber = useSelector((state: RootState) => state.pagination.pageNumber)
-  const {data, loading, error} = useFetch(`https://dummyjson.com/users?limit=${6}&skip=${6*(pageNumber-1)}`)
+  const searchInputText = useSelector((state: RootState) => state.searchInput.text)
+  const [url, setUrl] = useState<string>(`https://dummyjson.com/users?limit=${6}&skip=${6*(pageNumber-1)}`)
+
+  useEffect(() => {
+    if(searchInputText){
+      setUrl(`https://dummyjson.com/users/search?q=${searchInputText}`)
+    } else {
+      setUrl(`https://dummyjson.com/users?limit=${6}&skip=${6*(pageNumber-1)}`)
+    }
+  }, [searchInputText, pageNumber])
+
+  const {data, loading, error} = useFetch(url)
 
   const dispatch = useDispatch()
 
@@ -38,7 +49,15 @@ const UserList = () => {
   return (
     <div className={styles.container}>
       {
-        data.map((userData, idx) => {
+        data
+        .filter((userData, idx) => { // if search text exist, filter data
+          if (searchInputText){
+            return idx >= 6*(pageNumber-1) && idx < 6*pageNumber
+          } else {
+            return userData
+          }
+        })
+        .map((userData, idx) => {
           return (
             <div key={idx} onClick={() => handleUserDetail(userData.id)}>
               <User userData={userData} activeUserId={activeUserId}/>
