@@ -5,6 +5,7 @@ import UserDetail from './components/UserDetail/UserDetail';
 import PaginationControl from './components/PaginationControl/PaginationControl';
 import SubmitButton from './components/SubmitButton/SubmitButton';
 import { Toaster } from 'react-hot-toast';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
           <PaginationControl/>
           <SubmitButton/>
         </div>
+        <Footer/>
       </div>
     </div>
   )

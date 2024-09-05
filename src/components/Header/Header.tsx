@@ -7,9 +7,9 @@ const Header = () => {
         <div className={styles.logo}>Find Employee</div>
         <SearchForm/>
         <ul className={styles.nav_list}>
-            <li className={styles.list_item}>Home</li>
-            <li className={styles.list_item}>Idea</li>
-            <li className={styles.list_item}>Contact Me</li>
+            <li className={styles.list_item}>
+              <a href="mailto: osmantopuz98@gmail.com">Contact Me</a>
+            </li>
         </ul>
     </nav>
   )
