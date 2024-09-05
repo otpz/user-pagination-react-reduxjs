@@ -4,11 +4,15 @@ import UserList from './components/UserList/UserList';
 import UserDetail from './components/UserDetail/UserDetail';
 import PaginationControl from './components/PaginationControl/PaginationControl';
 import SubmitButton from './components/SubmitButton/SubmitButton';
+import { Toaster } from 'react-hot-toast';
 
 const App = () => {
 
   return (
     <div className="container">
+      <div>
+        <Toaster/>
+      </div>
       <div className="inner">
         <Header/>
         <div className='main'>
