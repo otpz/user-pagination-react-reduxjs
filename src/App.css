@@ -42,3 +42,10 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
+.main-bottom{
+  margin-top: 10px;
+  width: 87.5rem;
+  display: flex;
+  justify-content: space-between;
+}

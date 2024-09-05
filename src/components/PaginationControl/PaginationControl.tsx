@@ -22,7 +22,7 @@ const PaginationControl = () => {
   return (
     <div className={styles.container}>
       <Stack spacing={2}>
-        <Pagination count={30} page={page} onChange={handleChange} color="primary"/>
+        <Pagination count={30} className={styles.pagination_style} page={page} onChange={handleChange} color="primary"/>
       </Stack>
     </div>
   )

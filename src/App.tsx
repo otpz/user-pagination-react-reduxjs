@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import UserList from './components/UserList/UserList';
 import UserDetail from './components/UserDetail/UserDetail';
 import PaginationControl from './components/PaginationControl/PaginationControl';
+import SubmitButton from './components/SubmitButton/SubmitButton';
 
 const App = () => {
 
@@ -14,7 +15,10 @@ const App = () => {
           <UserList/>
           <UserDetail/>
         </div>
-        <PaginationControl/>
+        <div className="main-bottom">
+          <PaginationControl/>
+          <SubmitButton/>
+        </div>
       </div>
     </div>
   )

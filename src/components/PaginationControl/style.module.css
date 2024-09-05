@@ -1,12 +1,13 @@
 
 .container{
     width: 530px;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* border: 1px solid white; */
+    border-radius: 10px;
+    background-color: rgba(101, 132, 255, 0.25);
 }
 
 .container ul li div,
