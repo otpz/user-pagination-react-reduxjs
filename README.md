@@ -1,3 +1,10 @@
+# User Pagination, Searching and Data Fetching
+
+# Live Website URL -> https://otpz.github.io/user-pagination-react-reduxjs/
+
+This project developed with React, Typescript and Redux Toolkit. In this project I built pagination, search input and fetching data from an API.
+You can select a user from the list and see their details. If you like the basic resume, you can get hired by Hire Button.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
