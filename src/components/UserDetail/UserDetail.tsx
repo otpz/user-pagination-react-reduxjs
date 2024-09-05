@@ -19,7 +19,9 @@ const UserDetail = () => {
     if (loading){
         return (
             <div className={styles.container}>
-            <div className={styles.loading}>Loading...</div>
+                <div className={styles.loading_div}>
+                    <div className={styles.loader}></div>
+                </div>
             </div>
         )
     }
