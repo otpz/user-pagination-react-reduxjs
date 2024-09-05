@@ -33,7 +33,9 @@ const UserList = () => {
   if (loading){
     return (
       <div className={styles.container}>
-        <div className={styles.loader}></div>
+        <div className={styles.loading_container}>
+          <div className={styles.loader}></div>
+        </div>
       </div>
     )
   }

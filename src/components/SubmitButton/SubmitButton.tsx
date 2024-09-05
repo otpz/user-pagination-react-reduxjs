@@ -19,7 +19,6 @@ const SubmitButton = () => {
             <button onClick={handleHire} className={styles.button}>
                 {toggleConfetti ? <div className={styles.loader}></div> : "Hire Employee"}
             </button>
-            
             {
                 toggleConfetti && 
                 <Confetti
